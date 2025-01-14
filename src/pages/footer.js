@@ -1,38 +1,70 @@
 import React from "react";
-import { Select } from "antd";
-import { UpOutlined } from "@ant-design/icons";
-// import "./Footer.css";
+import './footer.css';
+
 
 const Footer = () => {
-  const { Option } = Select;
-
   return (
-    <footer className="footer-container">
-      <div className="footer-content">
+    <footer className="footer">
+      <div className="footer-top">
+        <div className="footer-logo">
+          <h3>bidding Farmers</h3>
+        </div>
         <div className="footer-links">
-          <a href="#contact">Contact Us</a>
-          <a href="#legal">Legal</a>
-          <a href="#cookies">Cookies</a>
-          <a href="#about">About Us</a>
-          <a href="#sitemap">Site Map</a>
-          <a href="#directory">Auction Lot Directory</a>
-          <a href="#accessibility">Accessibility</a>
-        </div>
-        <div className="footer-language">
-          <span>Select Language</span>
-          <Select defaultValue="English" style={{ width: 120 }}>
-            <Option value="English">English</Option>
-            <Option value="Hindi">Hindi</Option>
-            <Option value="Spanish">Spanish</Option>
-          </Select>
+          <div className="footer-column">
+            <h4>Solutions to Sell</h4>
+            <ul>
+              <li><a href="#farmers">For Farmers</a></li>
+              <li><a href="#hubs">For Hubs</a></li>
+              <li><a href="#custom-solutions">Custom Solutions</a></li>
+            </ul>
+          </div>
+          <div className="footer-column">
+            <h4>Solutions to Buy</h4>
+            <ul>
+              <li><a href="#wholesale">Buy for Wholesale</a></li>
+              <li><a href="#retail">Buy for Retail</a></li>
+            </ul>
+          </div>
+          <div className="footer-column">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#small-farm">Small Farm Difference</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+            </ul>
+          </div>
+          <div className="footer-column">
+            <h4>About</h4>
+            <ul>
+              <li><a href="#our-story">Our Story</a></li>
+              <li><a href="#our-team">Our Team</a></li>
+              <li><a href="#careers">Careers</a></li>
+              <li><a href="#press">Press</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div className="footer-column">
+            <h4>Social</h4>
+            <ul>
+              <li><a href="#instagram">Instagram</a></li>
+              <li><a href="#facebook">Facebook</a></li>
+              <li><a href="#linkedin">LinkedIn</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div className="footer-bottom">
-        <span>Copyright © eshant Ltd 2025</span>
-        <div className="footer-up">
-          <UpOutlined />
+      <footer className="footer">
+        <div className="footer-bottom">
+          <p>© 2025 Rooted Farmers, Inc. All Rights Reserved.</p>
+          <div className="footer-policy">
+            <a href="#privacy-policy">Privacy Policy</a>
+            <span> | </span>
+            <a href="#terms">Terms of Service</a>
+          </div>
         </div>
-      </div>
+      </footer>
     </footer>
   );
 };
